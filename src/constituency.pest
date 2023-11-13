@@ -1,11 +1,11 @@
 punct = _{ "," | ":" }
-tag = { punct | UPPERCASE_LETTER+ ~ "$"? }
-value = { punct | (ALPHABETIC | NUMBER | "'" )+ }
+tag = { punct | UPPERCASE_LETTER* ~ "$"? }
+value = { punct | (ALPHABETIC | NUMBER | "'" )* }
 
 delimeter = _{ WHITE_SPACE+ }
 delimeter_optional = _{ WHITE_SPACE* }
 
 leaf_node = { "(" ~ tag ~ delimeter ~ value ~ ")" }
-node = { "(" ~ tag ~ (delimeter ~ (node | leaf_node))+ ~ delimeter_optional ~ ")" }
+node = { "(" ~ tag ~ delimeter ~ ((node | leaf_node) ~ delimeter_optional)+ ~ ")" }
 
 tree = { SOI ~ (node | leaf_node) ~ EOI }
