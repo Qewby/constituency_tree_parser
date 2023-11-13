@@ -4,9 +4,8 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "Rust parser created to parse constituency tree"
-authors = ["Dzhos Oleksii"]
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Bohdan Tsehelnyk"]
+homepage = "https://github.com/Qewby/constituency_tree_parser"
 
 [dependencies]
 pest = "2.7.5"
