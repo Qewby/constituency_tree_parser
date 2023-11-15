@@ -6,6 +6,7 @@ This parser can be used to parse constituency tree into tree data structure. The
 - Leaf node contains word and its tag
 - Non-leaf node contains tag and 1 or more childrens
 
-Tree can be used to determine sentence structure and find sentences with specific structure
+Tree can be used to determine sentence structure and find sentences with specific structure.
+
 Example tree: (S (NP (PRP It)) (VP (VBZ is) (NP (NP (NN sentence)) (VP (VB to) (VP (VB test) (NP (NN constituencty) (NN tree)))))))
 ![Example tree](/assets/example.png)
