@@ -10,3 +10,11 @@ Tree can be used to determine sentence structure and find sentences with specifi
 
 Example tree: (S (NP (PRP It)) (VP (VBZ is) (NP (NP (NN sentence)) (VP (VB to) (VP (VB test) (NP (NN constituencty) (NN tree)))))))
 ![Example tree](/assets/example.png)
+
+### Usage
+
+```
+let tree = ConstituencyTree::parse(String::from("(S (NP (PRP It)) (VP (VBZ is) (NP (NP (NN sentence)) (VP (VB to) (VP (VB test) (NP (NN constituencty) (NN tree)))))))"));
+```
+
+Fuction return tree data structure, every node contains optional tag, value, and Vec of childrens
