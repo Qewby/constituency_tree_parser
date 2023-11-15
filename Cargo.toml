@@ -8,6 +8,7 @@ authors = ["Bohdan Tsehelnyk"]
 homepage = "https://github.com/Qewby/constituency_tree_parser"
 
 [dependencies]
+anyhow = "1.0.75"
 clap = "4.4.8"
 pest = "2.7.5"
 pest_derive = "2.7.5"

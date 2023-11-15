@@ -1,6 +1,6 @@
 punct = _{ "," | ":" }
 tag = { punct | UPPERCASE_LETTER* ~ "$"? }
-value = { punct | (ALPHABETIC | NUMBER | "'" )* }
+value = { punct | (ALPHABETIC | NUMBER | "'" | "." )* }
 
 delimeter = _{ WHITE_SPACE+ }
 delimeter_optional = _{ WHITE_SPACE* }

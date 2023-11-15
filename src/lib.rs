@@ -23,6 +23,18 @@ impl ConstituencyTree {
         }
     }
 
+    pub fn get_value(&self) -> Option<&String> {
+        self.value.as_ref()
+    }
+
+    pub fn get_tag(&self) -> Option<&String> {
+        self.tag.as_ref()
+    }
+
+    pub fn get_items(&self) -> Option<&Vec<ConstituencyTree>> {
+        self.items.as_ref()
+    }
+
     fn parse_tree_node(pair: Pair<Rule>) -> ConstituencyTree {
         let mut node = ConstituencyTree::new();
 
