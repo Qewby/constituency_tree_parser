@@ -3,7 +3,7 @@ name = "constituency_tree_parser"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-description = "Rust parser created to parse constituency tree"
+description = "Rust parser created to parse constituency tree into tree structure"
 authors = ["Bohdan Tsehelnyk"]
 homepage = "https://github.com/Qewby/constituency_tree_parser"
 
